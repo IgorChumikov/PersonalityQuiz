@@ -335,10 +335,14 @@
                     <navigationItem key="navigationItem" title="Результат" id="NDG-ge-CvD">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="JAk-a2-oMR">
                             <connections>
-                                <segue destination="WWM-TC-Lk4" kind="unwind" unwindAction="unwindWithSegue:" id="XzR-I1-i3C"/>
+                                <segue destination="WWM-TC-Lk4" kind="unwind" unwindAction="unwindWithSegue:" id="3QM-oE-rkS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ubD-vy-JkF" id="MDp-cB-KeJ"/>
+                        <outlet property="emojiLabel" destination="bIB-Ip-f7f" id="bgb-bn-RtS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKR-tJ-42c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WWM-TC-Lk4" userLabel="Exit" sceneMemberID="exit"/>

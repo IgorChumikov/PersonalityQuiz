@@ -40,9 +40,10 @@ class QuestionsViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
     }
-    
+    //if let welcomeVC = viewController as? WelcomeViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let resultVC = segue.destination as? ResultViewController else {return}
+        resultVC.individualUserAnswers = answersChosen
     }
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
